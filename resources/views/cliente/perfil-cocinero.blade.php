@@ -32,7 +32,22 @@
             <div class="lg:col-span-2">
                 <h2 class="text-2xl font-bold text-[#2D3748] mb-6">Menú Disponible</h2>
                 <div class="grid gap-6">
+                    <!-- From Uiverse.io by eslam-hany --> 
+                    <div class="book">
+                        @foreach($cocinero->dishes as $dish)
+                            <ul>
+                                <li>{{ $dish->name }}</li>
+                            </ul>
+                            
+                            <div class="cover">
+                                <h1>menu</h1> 
+                                <br>
+                                <h2>{{ $cocinero->name }}</h2>
+                            </div>
+                            @endforeach
+                    </div>
                     @foreach($cocinero->dishes as $dish)
+                        
                         <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition">
                             <div class="flex gap-6">
                                 <img 

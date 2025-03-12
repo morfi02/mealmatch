@@ -79,8 +79,8 @@
                                     <a href="{{ route('dishes.edit', $dish->id) }}"
                                         class="group flex items-center space-x-1 text-gray-600 hover:text-blue-500 transition-all duration-200">
                                         <span
-                                            class="text-sm font-medium opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-200">Editar</span>
-                                        <i class="fas fa-edit text-lg"></i>
+                                            class="">Editar</span>
+                                        
                                     </a>
                                     <form action="{{ route('dishes.destroy', $dish->id) }}" method="POST" class="inline">
                                         @csrf
@@ -89,8 +89,8 @@
                                             class="group flex items-center space-x-1 text-gray-600 hover:text-red-500 transition-all duration-200"
                                             onclick="return confirm('¿Estás seguro de que quieres eliminar este plato?')">
                                             <span
-                                                class="text-sm font-medium opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all duration-200">Eliminar</span>
-                                            <i class="fas fa-trash text-lg"></i>
+                                                class="">Eliminar</span>
+                                            
                                         </button>
                                     </form>
                                 </div>
